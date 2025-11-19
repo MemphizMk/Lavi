@@ -17,22 +17,31 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: #000;
     color: var(--primary-color);
     font-family: 'Share Tech Mono', monospace;
-    height: 100vh;
-    overflow: hidden;
+    margin: 0;
+    min-height: 100vh;
+    /* Use min-height to allow growth */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    position: relative;
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 800px;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
+    text-align: center;
+    z-index: 2;
+    padding: 20px 0;
+    /* Add vertical padding */
+    margin: auto;
+    /* Center vertically if possible, but allow scroll */
 }
 
 /* CRT Scanline Effect */
@@ -204,9 +213,9 @@ h1 {
 /* Location Pin (Target Style) */
 .map-pin {
     position: absolute;
-    /* Adjusted for Trichy (South India) */
-    top: 48%;
-    left: 72%;
+    /* Adjusted for Trichy (South India) - Moved Left to 50% */
+    top: 45%;
+    left: 50%;
     width: 20px;
     height: 20px;
     border: 2px solid var(--alert-color);
