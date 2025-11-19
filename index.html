@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Beauty Database - Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="scan-overlay"></div>
+
+        <header>
+            <h1>GLOBAL BEAUTY DATABASE</h1>
+            <div class="status-bar">
+                <span class="status-item">SYSTEM: <span class="blink">ONLINE</span></span>
+                <span class="status-item">VERSION: 2.4.1</span>
+                <span class="status-item">SECURITY: MAX</span>
+            </div>
+        </header>
+
+        <main id="scanner-section">
+            <div class="scanner-frame">
+                <div class="grid-lines"></div>
+                <div class="map-container">
+                    <img src="world_map.png" alt="World Map" class="world-map">
+                    <!-- Stamps -->
+                    <div class="stamp stamp-na" id="stamp-na">NOT FOUND</div>
+                    <div class="stamp stamp-sa" id="stamp-sa">NOT FOUND</div>
+                    <div class="stamp stamp-eu" id="stamp-eu">NOT FOUND</div>
+                    <div class="stamp stamp-af" id="stamp-af">NOT FOUND</div>
+                    <div class="stamp stamp-as" id="stamp-as">SIGNAL DETECTED</div>
+                    <!-- Location Pin -->
+                    <div class="map-pin" id="map-pin"></div>
+                </div>
+                <div class="radar-sweep"></div>
+                <div class="target-reticle"></div>
+            </div>
+
+            <div class="controls">
+                <p class="instruction">INITIATE GLOBAL SEARCH PROTOCOL?</p>
+                <button id="start-btn" class="cyber-btn">
+                    <span class="btn-text">START ANALYSIS</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+
+            <div class="log-terminal">
+                <div id="log-content"></div>
+                <span class="cursor">_</span>
+            </div>
+        </main>
+
+        <main id="result-section" class="hidden">
+            <div class="match-container">
+                <div class="match-header">
+                    <span class="warning-icon">⚠️</span>
+                    <h2>MATCH FOUND</h2>
+                    <span class="warning-icon">⚠️</span>
+                </div>
+
+                <div class="image-frame">
+                    <div class="corner-bracket top-left"></div>
+                    <div class="corner-bracket top-right"></div>
+                    <div class="corner-bracket bottom-left"></div>
+                    <div class="corner-bracket bottom-right"></div>
+                    <!-- USER: Replace 'Lanavya.png' with your girlfriend's photo -->
+                    <img src="Lavanya.png" alt="The World's Prettiest Woman" id="result-image">
+                    <div class="match-overlay">100% MATCH</div>
+                </div>
+
+                <div class="analysis-report">
+                    <div class="stat-row">
+                        <span class="label">BEAUTY RADIANCE:</span>
+                        <span class="value">OFF THE CHARTS</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="label">SEXY FACTOR:</span>
+                        <span class="value">INFINITE</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="label">CUTENESS LEVEL:</span>
+                        <span class="value">OVERLOAD</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="label">CONCLUSION:</span>
+                        <span class="value highlight">WORLD'S PRETTIEST</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
