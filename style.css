@@ -214,7 +214,7 @@ h1 {
 .map-pin {
     position: absolute;
     /* Adjusted for Trichy (South India) - Moved Left to 50% */
-    top: 45%;
+    top: 42%;
     left: 50%;
     width: 20px;
     height: 20px;
